@@ -3,16 +3,14 @@ import styled from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 const TopBarWrapper = styled.div`
-border: 1px solid yellow;
+border: 1px solid #404040;
 width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
 
 
-#searchtxt{
-  
-  
+#searchtxt{ 
   border:solid 3px;
   border-radius:20px;
   width:40%;
@@ -24,21 +22,16 @@ justify-content: center;
   border-color: #404040;
   height:25px;
   width:25%;
-
   }
 `
 const TopBar = () => {
     return(
-        <TopBarWrapper>
-        
+        <TopBarWrapper>  
         <input type="text" id="searchtxt" placeholder="Pesquisar..."/>
         <button>
             <FontAwesomeIcon icon={faSearch} />
-        </button>
-        
+        </button>       
         </TopBarWrapper>
-
-    
     )
 }
 
