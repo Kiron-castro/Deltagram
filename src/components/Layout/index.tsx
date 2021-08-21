@@ -6,7 +6,6 @@ const Layout: React.FC = () => {
   return (
       <Container>
           <Wrapper>
-             {/* <MenuBar></MenuBar> */}
              <Main /> 
              {/* <SideBar></SideBar> */}
           </Wrapper>

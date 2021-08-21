@@ -1,10 +1,20 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const SideBarWrapper = styled.div`
-border: 1px solid #404040;
-width: 25%;
-display: flex;
+display: none;
+@media(min-width: 420px) {
+    width: 25%;
+    display: flex;
+    position: relative;
+}
+border: 1px  #9e9e9e;
 flex-direction: column;
+
+position: absolute;
+left: 0;
+width: 55%;
+background-color: #00334d;
+z-index: 100;
 
 a {
     display: inline-block;
@@ -17,12 +27,18 @@ a {
     font-weight: bolder;
     margin-top: 35px;
 }
+
+${(props) =>
+    !props.hidden &&
+    css`
+      display: flex;
+    `}
 `
 
-const SideBar = ()=>{
+const SideBar = ({hidden}:{hidden: boolean})=>{
 
     return (
-        <SideBarWrapper>
+        <SideBarWrapper hidden={hidden}>
             <a href="#">Home</a>
             <a href="#">Notification</a>
             <a href="#">Profile</a>
@@ -32,5 +48,6 @@ const SideBar = ()=>{
         </SideBarWrapper>
     )
 }
+
 
 export default SideBar;

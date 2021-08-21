@@ -2,10 +2,14 @@
 import styled from 'styled-components'
 
 export default styled.div`
-border: 1px solid #404040;
+border: 0.5px solid #404040;
 
-    width:1200px;
+    width: 100%;
+    min-height: 90vh;
+
+
+    @media(min-width: 421px) {
+        width:1000px;
     min-height: 200px; 
-
-    
+    }
 `
