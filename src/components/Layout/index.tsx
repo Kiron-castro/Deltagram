@@ -7,7 +7,7 @@ const Layout: React.FC = () => {
       <Container>
           <Wrapper>
              <Main /> 
-             {/* <SideBar></SideBar> */}
+              
           </Wrapper>
       </Container>
   );

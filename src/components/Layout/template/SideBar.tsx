@@ -13,14 +13,14 @@ flex-direction: column;
 position: absolute;
 left: 0;
 width: 55%;
-background-color: #00334d;
+background-color:#3d3e3f;
 z-index: 100;
 
 a {
     display: inline-block;
     padding: 12px 7px;
     text-align:center;
-    color: #f0f0f0;
+    color: #bebebe;
     text-decoration: none;
     margin-bottom: 20px;
     font-family: Helvetica Neue”,Helvetica,Arial,sans-serif;

@@ -4,6 +4,7 @@ import Avatar from '../../Avatar';
 const TopMainWrapper = styled.div`
 border: 1px solid #969191;
 width: 100%;
+box-sizing: border-box;
 
 @media(min-width: 420px) {
     padding: 5px 20px;
@@ -19,8 +20,8 @@ width: 100%;
 }
 .btn-post {
     border: 1px solid transparent;
-    background-color: blue;
-    color: white;
+    background-color:#bebebe;
+    color: black;
     padding: 5px 10px;
     border-radius: 5px;
 }

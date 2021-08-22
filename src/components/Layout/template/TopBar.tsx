@@ -8,7 +8,7 @@ width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
-background-color: #00334d;
+background-color: #3d3e3f;
 padding: 8px 0;
 
 .icon-top {
